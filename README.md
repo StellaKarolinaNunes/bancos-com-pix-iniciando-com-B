@@ -39,7 +39,7 @@ Utilizando o pacote `http`, o script realiza uma consulta dinâmica à lista com
 ## Imagens
 
  <p align="center">
-  <img src="./assets/images/deploy.png" width="100%" alt="deploy" />
+  <img src="./assets/images/image.png" width="100%" alt="image" />
 
 </p>
 
@@ -184,7 +184,15 @@ mantendo a referência ao repositório original.
       <a href="https://github.com/StellaKarolinaNunes">
         <img src="https://github.com/StellaKarolinaNunes.png" width="100px" alt="Stella Karolina"/>
         <br />
-        <sub><b>Stella Karolina (Desenvolvedora)</b></sub>
+        <sub><b>Stella Karolina Nunes Peixoto</b></sub>
+        <br />
+      </a>
+    </td>
+    <td>
+      <a href="https://github.com/Gab0701">
+        <img src="https://github.com/Gab0701.png" width="100px" alt="Gabriel"/>
+        <br />
+        <sub><b>João Gabriel Peres de Castro </b></sub>
         <br />
       </a>
     </td>
