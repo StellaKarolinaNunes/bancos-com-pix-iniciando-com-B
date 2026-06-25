@@ -1,200 +1,330 @@
-  <h1 align="center">
-       Bancos com pix iniciando com B
-    <br />
-    <br />
-    <a href="https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B">
-     <img src="./assets/images/banner.png" alt="Bancos com pix iniciando com B Banner" width="100%">
-    </a>
-  </h1>
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
-  <img src="https://img.shields.io/badge/Status-Gratuito-green?style=for-the-badge" alt="Status">
-  <a href="https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B/blob/main/LICENSE">
-  <img src="https://img.shields.io/github/license/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B?style=flat&logo=open-source-initiative&logoColor=white" alt="Licença"></a>
-</p>
+# Bancos com PIX iniciando com B
+
+### Script em Dart para consultar instituições financeiras na Brasil API e filtrar bancos com nome iniciado pela letra B
+
+<a href="https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B">
+  <img src="./assets/images/banner.png" alt="Banner do projeto Bancos com PIX iniciando com B" width="100%">
+</a>
 
 <br>
+
+<img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+
+<img src="https://img.shields.io/badge/REST%20API-HTTP-6B7280?style=for-the-badge" alt="REST API">
+
+<img src="https://img.shields.io/badge/Brasil%20API-Dados%20Públicos-009C3B?style=for-the-badge" alt="Brasil API">
+
+<img src="https://img.shields.io/badge/Terminal-111111?style=for-the-badge&logo=gnubash&logoColor=white" alt="Terminal">
+
+<img src="https://img.shields.io/badge/Status-Concluído-2EA44F?style=for-the-badge" alt="Status do projeto">
+
+<br><br>
+
+<p align="center">
+  <a href="https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B">
+    <img src="https://img.shields.io/badge/⌘%20Explorar%20Código--Fonte-181717?style=for-the-badge&logo=github&logoColor=white" alt="Explorar Código-Fonte">
+  </a>
+  <a href="#preview">
+    <img src="https://img.shields.io/badge/◈%20Ver%20Resultado%20no%20Terminal-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Ver Resultado no Terminal">
+  </a>
+</p>
+
+</div>
 
 ---
 
-## Introdução
-Este projeto é um script desenvolvido em Dart para consultar a [Brasil API](https://brasilapi.com.br/), focando em extrair dados atualizados do sistema bancário nacional. Ele permite identificar rapidamente quais instituições financeiras operam com PIX e atendem a critérios específicos de filtragem.
+## Sobre o projeto
 
-## Por que fazer este projeto?
-O objetivo principal foi demonstrar a aplicação prática de conceitos de programação assíncrona e consumo de serviços externos. Através deste código, exploramos como integrar uma aplicação com APIs REST de forma eficiente e como processar grandes volumes de dados JSON em tempo real.
+O **Bancos com PIX iniciando com B** é um script desenvolvido em **Dart** para consultar informações de instituições financeiras por meio da **Brasil API**.
 
-## A Solução
-Utilizando o pacote `http`, o script realiza uma consulta dinâmica à lista completa de bancos. A lógica aplicada filtra as instituições cujo nome inicia com a letra **'B'**, apresentando os resultados diretamente no console. É uma solução limpa, extensível e de fácil compreensão para quem está começando a trabalhar com Dart e APIs.
+A aplicação realiza uma requisição HTTP para obter dados bancários atualizados, processa a resposta em formato JSON e aplica filtros para identificar instituições cujo nome inicia com a letra **B** e que atendem aos critérios definidos no código relacionados ao PIX.
+
+O projeto foi desenvolvido com foco em prática de programação assíncrona, consumo de APIs REST, tratamento de respostas JSON, filtragem de dados e exibição de resultados diretamente no terminal.
+
+> Este projeto foi desenvolvido para fins educacionais e de portfólio, com foco em Dart, integração com APIs externas, requisições assíncronas e manipulação de dados JSON.
+
+---
+
+## Objetivo
+
+O objetivo principal é demonstrar como uma aplicação em Dart pode se comunicar com uma API externa, receber dados estruturados e aplicar filtros personalizados.
+
+Em vez de trabalhar com dados estáticos, o script consulta uma fonte externa e processa dinamicamente a lista de instituições financeiras disponíveis.
+
+A atividade reforça conceitos importantes como:
+
+* requisições HTTP;
+* programação assíncrona com `Future` e `async/await`;
+* tratamento de respostas HTTP;
+* manipulação de JSON;
+* listas e coleções em Dart;
+* filtros condicionais;
+* tratamento de erros de conexão;
+* saída de dados formatada no terminal.
+
+---
 
 ## Funcionalidades
-- **Requisição HTTP**: Integração com serviços de API externos.
-- **Manipulação JSON**: Tratamento de dados estruturados e tabelas dinâmicas.
-- **Filtragem Lógica**: Algoritmo para isolar bancos por inicial e disponibilidade de PIX.
-- **Saída em Terminal**: Log de resultados formatado para o usuário.
-- **Tratamento de Erros**: Verificação de status code e estabilidade da conexão.
 
-<br>
+* **Consulta à Brasil API:** busca dados de instituições financeiras disponíveis na API.
+* **Requisição HTTP Assíncrona:** utiliza chamadas não bloqueantes para comunicação com o serviço externo.
+* **Manipulação de JSON:** processa dados recebidos no formato JSON.
+* **Filtro por Inicial:** seleciona instituições cujo nome começa com a letra `B`.
+* **Filtro relacionado ao PIX:** identifica bancos que atendem aos critérios definidos pelo projeto para operações com PIX.
+* **Exibição no Terminal:** apresenta os resultados de forma organizada no console.
+* **Tratamento de Erros:** verifica falhas de conexão e respostas HTTP inválidas.
+* **Código Simples e Modular:** estrutura voltada para aprendizado e fácil manutenção.
+* **Testes Automatizados:** base preparada para validar filtros e regras de consulta.
 
-## Imagens
+---
 
- <p align="center">
-  <img src="./assets/images/image.png" width="100%" alt="image" />
+## Tecnologias utilizadas
 
-</p>
+| Tecnologia   | Aplicação no projeto                     |
+| ------------ | ---------------------------------------- |
+| Dart         | Linguagem principal do script            |
+| Brasil API   | Fonte externa de dados bancários         |
+| HTTP Package | Comunicação com a API REST               |
+| JSON         | Estrutura de dados recebida pela API     |
+| REST API     | Arquitetura de integração entre sistemas |
+| Test Package | Execução de testes automatizados         |
+| Git          | Controle de versão                       |
+| GitHub       | Hospedagem do repositório                |
 
+---
 
-##  Estrutura de Pastas
+## Destaques técnicos
 
-```bash
-├── assets/                     # Arquivos estáticos
-│   └── images/                 # Imagens do projeto
-│       └── banner.png          # Identidade visual do projeto
-├── listar_bancos_B.dart        # Script Dart principal
-├── pubspec.yaml                # Arquivo de configuração e dependências
-├── pubspec.lock                # Controle de versões das dependências
-├── LICENSE                     # Licença de uso
-└── README.md                   # Documentação do repositório
+* Consumo de API REST externa com Dart;
+* Uso de programação assíncrona com `async` e `await`;
+* Processamento de listas de dados retornadas em JSON;
+* Filtragem de instituições por letra inicial;
+* Organização da saída no terminal;
+* Tratamento de códigos de resposta HTTP;
+* Estrutura preparada para filtros personalizados;
+* Base adequada para evolução futura com exportação de dados;
+* Projeto simples, útil e focado em prática de Sistemas Distribuídos e integração de serviços.
+
+---
+
+## Fluxo de funcionamento
+
+```text
+Início do script
+        │
+        ▼
+Requisição HTTP para a Brasil API
+        │
+        ▼
+Recebimento dos dados bancários em JSON
+        │
+        ▼
+Conversão dos dados para estruturas Dart
+        │
+        ▼
+Aplicação dos filtros
+        │
+        ├── Nome iniciado com B
+        └── Critério relacionado ao PIX
+        │
+        ▼
+Exibição dos bancos encontrados no terminal
 ```
 
-<br>
+---
 
-## Como Executar
+## Preview
+
+<div align="center">
+
+<img src="./assets/images/image.png" width="100%" alt="Resultado do script Bancos com PIX iniciando com B no terminal">
+
+</div>
+
+---
+
+## Estrutura do projeto
+
+```bash
+bancos-com-pix-iniciando-com-B/
+├── assets/
+│   └── images/
+│       ├── banner.png
+│       └── image.png
+│
+├── test/
+│   └── bancos_test.dart
+│
+├── listar_bancos_B.dart
+├── pubspec.yaml
+├── pubspec.lock
+├── LICENSE
+├── CONTRIBUTING.md
+└── README.md
+```
+
+> Arquivos e pastas gerados automaticamente pelo Dart, como `.dart_tool/`, não aparecem na estrutura principal porque não devem ser versionados no Git.
+
+---
+
+## Como executar o projeto
 
 ### Pré-requisitos
-* **Dart SDK** (v3.0+)
-* **Git**
-* **Sistema Operacional**: Windows, Linux ou MacOS com suporte a compiladores C++.
-* **Editor de Código**: Editor de código de sua escolha, como Visual Studio Code, Android Studio, ou IntelliJ, com suporte ao Dart.
-* **Terminal**: Acesso a um terminal para executar os comandos.
- 
 
-###  Instalação Rápida
+Antes de iniciar, é necessário ter instalado:
 
-####  1. Clone o repositório
+* Dart SDK `3.0` ou superior;
+* Git;
+* Terminal compatível;
+* Conexão com a internet para realizar consultas à Brasil API;
+* Editor de código com suporte a Dart, como VS Code, Android Studio ou IntelliJ IDEA.
 
-   ```bash
-   git clone https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B.git
-   ```
+### 1. Clone o repositório
 
-####  2. Entre na pasta
+```bash
+git clone https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B.git
+```
 
-   ```bash
-   cd bancos-com-pix-iniciando-com-B
-   ```
+### 2. Acesse a pasta do projeto
 
-####  3. Instale as dependências
+```bash
+cd bancos-com-pix-iniciando-com-B
+```
 
-   ```bash
-   dart pub get
-   ```
+### 3. Verifique a instalação do Dart
 
-####  4. Execute o script
+```bash
+dart --version
+```
 
-   ```bash
-   dart run listar_bancos_B.dart
-   ```
+### 4. Instale as dependências
 
-####  5. Execute os testes
+```bash
+dart pub get
+```
 
-   ```bash
-   dart test
-   ```
+### 5. Execute o script
 
-<br>
+```bash
+dart run listar_bancos_B.dart
+```
 
-##  Roadmap
+---
 
-Acompanhe os próximos passos do desenvolvimento:
+## Testes
 
-- [x] **Consumo da Brasil API**: Integração inicial concluída.
-- [x] **Filtro por Nome (Letra 'B')**: Lógica base operacional.
-- [ ] **Entrada Dinâmica**: Permitir que o usuário insira qualquer letra para filtrar os bancos.
-- [ ] **Exportação de Dados**: Criar funcionalidade para salvar resultados em `CSV` ou `JSON`.
-- [ ] **Interface Gráfica**: Desenvolver uma versão visual do app utilizando Flutter.
-- [x] **Testes de Unidade**: Garantir a precisão dos filtros com testes automatizados.
-- [ ] **CI/CD**: Configurar GitHub Actions para validação contínua do código.
+Para executar os testes automatizados do projeto:
 
-<br>
+```bash
+dart test
+```
+
+Para analisar possíveis problemas no código:
+
+```bash
+dart analyze
+```
+
+---
+
+## Roadmap
+
+### Consulta e filtragem de dados
+
+* [x] Integração com a Brasil API;
+* [x] Requisição HTTP assíncrona;
+* [x] Processamento de dados JSON;
+* [x] Filtragem por bancos iniciados com a letra `B`;
+* [x] Exibição dos resultados no terminal;
+* [x] Tratamento básico de erros de conexão;
+* [x] Estrutura inicial de testes;
+* [ ] Permitir que o usuário informe qualquer letra para filtrar instituições;
+* [ ] Permitir filtragem por nome completo do banco;
+* [ ] Adicionar filtros por código bancário;
+* [ ] Criar filtros configuráveis via terminal.
+
+### Exportação e visualização
+
+* [ ] Exportar resultados para arquivo `.csv`;
+* [ ] Exportar resultados para arquivo `.json`;
+* [ ] Criar relatório formatado em texto;
+* [ ] Criar tabela organizada para visualização no terminal;
+* [ ] Adicionar paginação para listas maiores;
+* [ ] Criar histórico local das últimas consultas.
+
+### Evoluções futuras
+
+* [ ] Criar interface gráfica utilizando Flutter;
+* [ ] Criar versão web para consulta de bancos;
+* [ ] Integrar filtros mais avançados;
+* [ ] Criar cache temporário para reduzir requisições;
+* [ ] Adicionar GitHub Actions para testes automatizados;
+* [ ] Criar documentação detalhada da API utilizada;
+* [ ] Criar painel de consulta com múltiplos filtros.
+
+---
 
 ## Contribuição
 
-Este projeto é um esforço contínuo para fornecer ferramentas de consulta eficientes para o ecossistema financeiro brasileiro. Colaborações que visem a melhoria da performance, segurança ou clareza do código são incentivadas e devidamente apreciadas.
+Contribuições são bem-vindas.
 
-### Processo de Colaboração
+```bash
+# Faça um fork do projeto
 
-1. Realize o **Fork** do repositório original.
-2. Efetue o **Clone** da sua versão em um ambiente de desenvolvimento local.
-3. Institua uma nova **Branch** específica para a funcionalidade ou correção proposta: `git checkout -b feature/nome-da-mudanca`.
-4. Implemente as alterações necessárias, assegurando a conformidade com as diretrizes de código.
-5. Execute o conjunto de **Testes Unitários** para validar a integridade da aplicação: `dart test`.
-6. Submeta um **Pull Request** detalhando as motivações técnicas e os resultados alcançados.
+# Crie uma branch para sua funcionalidade
+git checkout -b feature/nova-funcionalidade
 
-### Diretrizes de Qualidade
+# Faça suas alterações
+git add .
 
-Para manter a consistência e a excelência técnica da base de código, solicitamos a observância dos seguintes critérios:
+# Crie um commit descritivo
+git commit -m "feat: adiciona nova funcionalidade"
 
-- Manutenção de um código limpo, modular e devidamente tipado.
-- Documentação de novas funções e classes conforme os padrões do projeto.
-- Mensagens de commit padronizadas e autoexplicativas.
-- Atualização da documentação relevante no arquivo README, caso aplicável.
-- Garantia de que todos os testes automatizados permaneçam em estado de aprovação (Success).
+# Envie sua branch
+git push origin feature/nova-funcionalidade
+```
 
-Para mais detalhes, consulte nosso arquivo de [Diretrizes de Contribuição](CONTRIBUTING.md).
+Depois, abra um Pull Request explicando claramente as alterações realizadas.
 
-<br>
+### Diretrizes
 
-##  Licença
+* Mantenha o código organizado e legível;
+* Utilize nomes claros para funções, variáveis e filtros;
+* Preserve o uso de programação assíncrona para chamadas HTTP;
+* Trate erros de conexão e respostas inesperadas da API;
+* Adicione testes ao incluir novas regras de filtragem;
+* Atualize o README quando houver mudança relevante;
+* Evite adicionar arquivos temporários ou gerados automaticamente ao repositório.
+
+---
+
+## Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
-``` bash
-MIT License - você pode usar, modificar e distribuir livremente,
-mantendo a referência ao repositório original.
+```text
+MIT License
+
+Você pode usar, modificar e distribuir este projeto,
+desde que mantenha os créditos e a referência ao repositório original.
 ```
 
- <br>
+---
 
- ## Contato
+## Créditos
 
- Se você tiver dúvidas, sugestões ou quiser saber mais sobre o projeto, entre em contato:
+### Desenvolvimento
 
- * **Principais Desenvolvedores:** [Stella Karolina](https://github.com/StellaKarolinaNunes)
- * **Repositório:** [Bancos com Pix no GitHub](https://github.com/StellaKarolinaNunes/bancos-com-pix-iniciando-com-B)
- * **LinkedIn:** [Stella Karolina Nunes](https://www.linkedin.com/in/stella-karolina/)
+* **Desenvolvimento principal:** [Stella Karolina Nunes](https://github.com/StellaKarolinaNunes)
+* **Desenvolvimento:** [João Gabriel Peres de Castro](https://github.com/Gab0701)
 
- <br>
+### Tecnologias e recursos
 
- ## Créditos
-
- O **Bancos com pix iniciando com B** é construído com o apoio de tecnologias e comunidades incríveis:
-
- * **Linguagem & SDK:** [Dart](https://dart.dev/)
- * **Provedor de Dados:** [Brasil API](https://brasilapi.com.br/) 
- * **Bibliotecas:** [http](https://pub.dev/packages/http) e [test](https://pub.dev/packages/test) 
- * **Badges:** [Shields.io](https://shields.io/)
- * **Banner & Design:** [Antigravity AI](https://github.com/google-deepmind)
-
- 
-### Desenvolvimento Principal
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/StellaKarolinaNunes">
-        <img src="https://github.com/StellaKarolinaNunes.png" width="100px" alt="Stella Karolina"/>
-        <br />
-        <sub><b>Stella Karolina Nunes Peixoto</b></sub>
-        <br />
-      </a>
-    </td>
-    <td>
-      <a href="https://github.com/Gab0701">
-        <img src="https://github.com/Gab0701.png" width="100px" alt="Gabriel"/>
-        <br />
-        <sub><b>João Gabriel Peres de Castro </b></sub>
-        <br />
-      </a>
-    </td>
-  </tr>
-</table>
+* **Linguagem e SDK:** [Dart](https://dart.dev/)
+* **Provedor de dados:** [Brasil API](https://brasilapi.com.br/)
+* **Comunicação HTTP:** [http](https://pub.dev/packages/http)
+* **Testes:** [test](https://pub.dev/packages/test)
+* **Badges:** [Shields.io](https://shields.io/)
+* **Controle de versão:** Git e GitHub
